@@ -44,7 +44,7 @@ def main():
             for shot in shots:
                 if shot.collides(ast):
                     shot.kill()
-                    ast.kill()
+                    ast.split()
         
         screen.fill("black") # Fills game window with solid black colour
 
