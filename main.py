@@ -41,6 +41,10 @@ def main():
             if player.collides(ast):
                 #print("Game over!")
                 sys.exit("Game over!")
+            for shot in shots:
+                if shot.collides(ast):
+                    shot.kill()
+                    ast.kill()
         
         screen.fill("black") # Fills game window with solid black colour
 
